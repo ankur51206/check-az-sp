@@ -13,6 +13,6 @@ echo $line >> sp.txt
 az ad app credential list --id $line --query [].{endDate:endDate} -o tsv >> sp.txt
 echo  "--------------------------------------------" >> sp.txt
 echo "" >> sp.txt
-sleep 3
+sleep 1
 done < appid
 
