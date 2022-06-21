@@ -10,7 +10,7 @@ while IFS= read  -r line;
 do
 
 echo $line >> sp.txt
-az ad app credential list --id $line --query [].{endDate:endDate} -o tsv >> sp.txt
+az ad app credential list --id $line --query [].{endDate:endDate} -o tsv >> sp1.txt
 echo  "--------------------------------------------" >> sp.txt
 echo "" >> sp.txt
 sleep 1
